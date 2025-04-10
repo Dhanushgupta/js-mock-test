@@ -1,0 +1,18 @@
+//Dom Navigation
+//Step 1: Creat The Element
+let newH1 = document.createElement("h1");
+
+//Step 2 : Add Attributes/Properties
+newH1.textContent="Dhanush"
+newH1.id = "kfc"
+newH1.className ="food"
+
+//Step 3 : APPEND ELEMENT TO THE DOM
+// document.body.append(newH1);
+document.body.prepend(newH1);
+newH1.style.backgroundColor = "black"
+newH1.style.color= "springgreen"
+// document.getElementById("box1").prepend(newH1)
+const show =document.getElementById("box3");
+document.body.insertBefore(newH1,show);
+console.log(newH1);
